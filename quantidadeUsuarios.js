@@ -1,4 +1,4 @@
-import { getCSS } from "./common.js"
+import { getCSS,  tickConfig } from "./common.js"
 
 async function quantidadeUsuarios(){
   const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
@@ -20,7 +20,33 @@ async function quantidadeUsuarios(){
 
 const layout = {
   plot_bgcolor: getCSS('--bg-color'),
-  paper-bgcolor: getCSS('--bg-color')
+  paper-bgcolor: getCSS('--bg-color'),
+  title: {
+    text: 'Redes Sociais com mais usuários no mundo',
+    x: 0,
+    font:{
+      color: getCSS('--primary-color'),
+      family: getCSS('--font'),
+      size: 30
+    }
+  },
+  xaxis: {
+    tickfont: tickConfig,
+    title: {
+      text: 'nome das redes sociais',
+      font: {
+          color: getCSS('--secundary-color')
+      }
+    } 
+  },
+  yaxis: {
+     tickfont: tickConfig,
+     title: {
+      text: 'bilhõees de usuários ativos',
+      font: {
+          color: getCSS('--secundary-color')
+      }
+  }
 }
 
   const grafico = document.createElement('div')
