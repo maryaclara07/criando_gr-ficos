@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-    --bg-color: #ECD8BD;
-    --primary-color: #9AA59D;
-    --secondary-color: #F6CDB4;
+    --bg-color: #A66E38;
+    --primary-color: #FFEEAD;
+    --secondary-color: #96CEB4;
     --font: "Playfair Display", sans-serif;
 }
 
@@ -14,33 +14,39 @@ body {
     height: 100vh;
     margin: 0;
 }
+
 header {
     background-color: var(--primary-color);
     text-align: center;
     padding: 1px;
 }
+
 h1 {
     font-size: 2rem;
     color: var(--bg-color);
      font-weight: 700;
 }
+
 nav a {
     text-decoration: none;
     color: var(--bg-color);
      margin: 0 2rem 1rem 0rem;
     font-size: 1.2rem;
 }
+
 nav a:hover {
     text-decoration: underline;
     transform: scale(0.90);
     transition: transform 0.1s;
 }
+
 .graficos-container_texto {
   font-size: 1.3rem;
   text-align: center;
   padding: 2rem;
   border: var(--secondary-color) solid 2px;
 }
+
 span {
  font-weight: bold;
  color: var(--secondary-color);
